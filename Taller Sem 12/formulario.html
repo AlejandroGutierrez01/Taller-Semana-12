@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <h2>Encuesta</h2>
+    <form id="encuestaForm">
+        <label>Nombre:</label>
+        <input type="text" id="nombre" placeholder="Alejandro Gutiérrez">
+        <span class="error-message hidden">Este campo es obligatorio.</span><br>
+
+        <label>Género:</label>
+        <select id="genero">
+            <option value="">Selecciona tu género</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+        <span class="error-message hidden">Este campo es obligatorio.</span><br>
+
+        <label>Edad:</label>
+        <input type="number" id="edad" placeholder="Ingresa tu edad">
+        <span class="error-message hidden">Este campo es obligatorio.</span><br>
+
+        <label>Correo Electronico:</label>
+        <input type="email" id="email" placeholder="ejemplo@correo.com">
+        <span class="error-message hidden">Este campo es obligatorio.</span><br>
+
+        <label>País de Residensia:</label>
+        <input type="text" id="pais" placeholder="Ecuador">
+        <span class="error-message hidden">Este campo es obligatorio.</span><br>
+
+        <label>Gustos/Hobbies:</label>
+        <input type="text" id="hobbies" placeholder="Futbol">
+        <span class="error-message hidden">Este campo es obligatorio.</span><br>
+
+        <label>Elegir Curso:</label>
+        <select id="curso">
+            <option value="">Selecciona un curso</option>
+            <option value="curso1">Curso 1: Matematica</option>
+            <option value="curso2">Curso 2: Lenguaje y Comunicación</option>
+            <option value="curso3">Curso 3: Acondicionamiento Físico</option>
+        </select>
+        <span class="error-message hidden">Este campo es obligatorio.</span><br>
+
+        <label>Número de horas de clases de capacitación:</label>
+        <select id="horas" onchange="calcularCosto()">
+            <option value="">Selecciona el número de horas</option>
+            <option value="10">10 horas</option>
+            <option value="20">20 horas</option>
+            <option value="30">30 horas</option>
+        </select>
+        <span class="error-message hidden">Este campo es obligatorio.</span><br>
+
+        <p id="costoTotal">Costo Total: $0</p><br>
+
+        <button type="submit">Enviar</button>
+
+        <div id="mensaje" class="hidden"></div>
+    </form>
+    <script src="formulario.js"></script>
+</body>
+
+</html>

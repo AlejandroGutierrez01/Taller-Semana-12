@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <link rel="stylesheet" href="estiloCuest.css">
+</head>
+<body>
+    <h2>Cuestionario</h2>
+    <form id="cuestionarioForm">
+        <div class="pregunta">
+            <label for="pregunta1">¿Cuál es la capital de Ecuador?</label>
+            <input type="text" id="pregunta1" name="pregunta1" placeholder="Tu respuesta...">
+        </div>
+
+        <div class="pregunta">
+            <p>El sol el una estrella?</p>
+            <input type="radio" id="vf1-verdadero" name="vf1" value="verdadero">
+            <label for="vf1-verdadero">Verdadero</label>
+            <input type="radio" id="vf1-falso" name="vf1" value="falso">
+            <label for="vf1-falso">Falso</label>
+        </div>
+
+        <div class="pregunta">
+            <p>¿Cuál es el océano más grande del mundo?</p>
+            <input type="radio" id="opcion1" name="opcion" value="atlantico">
+            <label for="opcion1">Atlántico</label>
+            <input type="radio" id="opcion2" name="opcion" value="indico">
+            <label for="opcion2">Índico</label>
+            <input type="radio" id="opcion3" name="opcion" value="pacifico">
+            <label for="opcion3">Pacífico</label>
+        </div>
+
+        <div class="pregunta">
+            <p>¿Cuáles son colores primarios?</p>
+            <input type="checkbox" id="color1" name="color" value="rojo">
+            <label for="color1">Rojo</label>
+            <input type="checkbox" id="color2" name="color" value="verde">
+            <label for="color2">Verde</label>
+            <input type="checkbox" id="color3" name="color" value="azul">
+            <label for="color3">Azul</label>            
+            <input type="checkbox" id="color4" name="color" value="amarillo">
+            <label for="color3">Amarillo</label>
+        </div>
+
+        <div class="pregunta">
+            <p>¿Cuál es la montaña más alta del mundo?</p>
+            <input type="radio" id="everest" name="montana" value="everest">
+            <label for="everest">Everest</label>
+            <input type="radio" id="k2" name="montana" value="k2">
+            <label for="fuji">Monte Fuji</label>
+            <input type="radio" id="kangchenjunga" name="montana" value="kangchenjunga">
+            <label for="chimborazo">Chimborazo</label>
+        </div>
+
+        <button type="button" onclick="evaluarCuestionario()">Evaluar Cuestionario</button>
+    </form>
+
+    <div id="resultado" class="hidden"></div>
+
+    <script src="cuestionario.js"></script>
+</body>
+</html>
